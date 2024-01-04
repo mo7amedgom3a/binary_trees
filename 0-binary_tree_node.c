@@ -24,7 +24,8 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 	/* assign values to the properties of the node */
 	newNode->parent = parent;
 	newNode->n = value;
-    newNode->left = newNode->right = NULL;
+	newNode->left = NULL;
+	newNode->right = NULL;
 
 	/* return a pointer to the node */
 	return (newNode);
