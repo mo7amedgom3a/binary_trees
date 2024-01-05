@@ -31,7 +31,7 @@ int check_BST(const binary_tree_t *tree, int min, int max)
 	if (tree->n < min || tree->n > max)
 		return (0);
 
-	return (check_BST(tree->left, min, tree->n) &&
-		check_BST(tree->right, tree->n, max));
+	return (check_BST(tree->left, min, tree->n - 1) &&
+		check_BST(tree->right, tree->n + 1, max));
 	/* -1 and +1 stem from "There must be no duplicate values" req */
 }
