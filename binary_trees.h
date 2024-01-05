@@ -60,5 +60,7 @@ void enQueue(binary_tree_t**, int*, binary_tree_t*);
 binary_tree_t* deQueue(binary_tree_t**, int*);
 int binary_tree_is_complete(const binary_tree_t *tree);
 int check_complete(const binary_tree_t *tree, size_t index, size_t size);
+int binary_tree_is_bst(const binary_tree_t *tree);
+int check_BST(const binary_tree_t *tree, int min, int max);
 int _pow_recursion(int x, int y);
 #endif
